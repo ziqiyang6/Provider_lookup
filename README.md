@@ -1,4 +1,4 @@
-~# Deployment Guide for Django Project
+# Deployment Guide for Django Project
 
 This README provides a step-by-step template to deploy your Django project from GitHub to a production server using **systemd** and **nginx**.
 
@@ -130,4 +130,14 @@ This README provides a step-by-step template to deploy your Django project from 
    sudo certbot --nginx -d your.domain.com
    ```
 
+---
 
+## 4. Final Checks
+
+* Visit `http://your.domain.com` to verify the application is live.
+* Ensure static files load correctly.
+* Check logs for any errors.
+
+---
+
+Feel free to customize paths, usernames, domain names, and service names as needed.
