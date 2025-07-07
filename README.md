@@ -49,7 +49,7 @@ This README provides a step-by-step template to deploy your Django project from 
 
 ## 2. Configure systemd Service
 
-1. Create a service file at `/etc/systemd/system/provider-lookup.service`:
+1. Create a service file at `/etc/systemd/system/provider-lookup.service`, template:
 
    ```ini
    [Unit]
