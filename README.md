@@ -20,7 +20,7 @@ This README provides a step-by-step template to deploy your Django project from 
 1. SSH into your server:
 
    ```bash
-   ssh zyang@<SERVER_IP>
+   ssh username@<SERVER_IP>
    ```
 2. Navigate to the directory where you want to deploy:
 
@@ -73,7 +73,7 @@ This README provides a step-by-step template to deploy your Django project from 
    [Install]
    WantedBy=multi-user.target
    ```
-2. Reload systemd and start the service:
+2. Reload systemd and start the service if you have permission, else ask Mr.Counts or Aaron:
 
    ```bash
    sudo systemctl daemon-reload
@@ -123,21 +123,3 @@ This README provides a step-by-step template to deploy your Django project from 
    sudo nginx -t
    sudo systemctl reload nginx
    ```
-3. (Optional) Enable HTTPS with Let's Encrypt:
-
-   ```bash
-   sudo apt install certbot python3-certbot-nginx
-   sudo certbot --nginx -d your.domain.com
-   ```
-
----
-
-## 4. Final Checks
-
-* Visit `http://your.domain.com` to verify the application is live.
-* Ensure static files load correctly.
-* Check logs for any errors.
-
----
-
-Feel free to customize paths, usernames, domain names, and service names as needed.
