@@ -30,20 +30,10 @@ This README provides a step-by-step template to deploy your Django project from 
 3. Clone your repository:
 
    ```bash
-   git clone https://github.com/ziqiyang6/Provider_Lookup_Project.git
+   git clone https://github.com/RandyBrown12/Provider_Lookup_Project.git
    cd Provider_Lookup_Project
    ```
-4. Create and activate a virtual environment:
-
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
-5. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
+4. Follow the instruction in the github 
 
 ---
 
