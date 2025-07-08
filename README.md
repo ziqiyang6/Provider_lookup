@@ -76,15 +76,20 @@ This README provides a step-by-step template to deploy your Django project from 
 2. Reload systemd and start the service if you have permission, else ask Mr.Counts or Aaron:
 
    ```bash
-   sudo systemctl daemon-reload
-   sudo systemctl start provider-lookup
-   sudo systemctl enable provider-lookup
+   sudo systemctl reload provider_lookup.service      # To load the systemd file
+   sudo systemctl start provider_lookup.service      # To start the systemd running
+   sudo systemctl enable provider_lookup.service      # To enable systemd running while the server restart
    ```
 3. Check status and logs:
 
    ```bash
-   sudo systemctl status provider-lookup
-   sudo journalctl -u provider-lookup -f
+   sudo systemctl status provider_lookup.service
+   ```
+4. More commands:
+
+   ```bash
+   sudo systemctl restart provider_lookup.service      # To restart the systemd application
+   sudo systemctl daemon-reload provider_lookup.service      # To reload the systemd file if the systemd file is updated
    ```
 
 ---
